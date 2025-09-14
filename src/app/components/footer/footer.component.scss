@@ -1,0 +1,83 @@
+.footer {
+  @apply py-12 px-6 relative overflow-hidden;
+  background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 20% 20%, rgba(255, 215, 0, 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(255, 215, 0, 0.02) 0%, transparent 50%);
+    pointer-events: none;
+  }
+}
+
+.footer-container {
+  @apply max-w-6xl mx-auto relative z-10;
+}
+
+.footer-content {
+  @apply flex flex-col md:flex-row items-center justify-between mb-8;
+}
+
+.footer-brand {
+  @apply text-center md:text-left mb-6 md:mb-0;
+}
+
+.footer-title {
+  @apply text-2xl md:text-3xl font-heading uppercase tracking-wider text-brand-accent font-bold mb-2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.footer-tagline {
+  @apply text-brand-text/80 font-body;
+  letter-spacing: 0.05em;
+}
+
+.footer-links {
+  @apply flex items-center;
+}
+
+.footer-link {
+  @apply inline-flex items-center gap-2 px-6 py-3 rounded-full bg-brand-accent text-brand-background font-bold transition-all duration-300 transform hover:-translate-y-1 hover:shadow-glow focus:outline-none focus:ring-4 focus:ring-brand-accent/50;
+  background: #FFFFFF;
+  
+  &:hover {
+    background: #E0E0E0;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+  }
+}
+
+.footer-icon {
+  @apply w-5 h-5;
+}
+
+.footer-bottom {
+  @apply border-t border-brand-accent/20 pt-6;
+}
+
+.footer-copyright {
+  @apply text-center text-brand-text/70 font-body text-sm;
+  letter-spacing: 0.05em;
+}
+
+// Mobile optimizations
+@media (max-width: 768px) {
+  .footer-title {
+    @apply text-xl;
+  }
+  
+  .footer-link {
+    @apply px-4 py-2 text-sm;
+  }
+  
+  .footer-icon {
+    @apply w-4 h-4;
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Divyam Shree | Tea, Coffee & Masala",
+  "short_name": "Divyam Shree",
+  "description": "Premium regular tea with hand-picked leaves, café-style cold coffee mix and Jeerawan Masala, made by one family since the 1980s.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FAF6F0",
+  "theme_color": "#FAF6F0",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "categories": ["food", "shopping", "lifestyle"],
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "150x150",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "150x150",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

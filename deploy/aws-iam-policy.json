@@ -1,0 +1,40 @@
+{
+  "_comment": "Least-privilege policy for the deploy user. Replace BUCKET_NAME, and ACCOUNT_ID + DISTRIBUTION_ID if you use CloudFront. Deliberately excludes s3:DeleteBucket and s3:PutBucketPolicy so a deploy can never destroy the bucket itself.",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ListTheDeployBucket",
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListBucket",
+        "s3:GetBucketLocation"
+      ],
+      "Resource": "arn:aws:s3:::BUCKET_NAME"
+    },
+    {
+      "Sid": "ReadWriteObjectsInTheDeployBucket",
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutObject",
+        "s3:GetObject",
+        "s3:DeleteObject"
+      ],
+      "Resource": "arn:aws:s3:::BUCKET_NAME/*"
+    },
+    {
+      "Sid": "InvalidateTheCdnAfterDeploy",
+      "Effect": "Allow",
+      "Action": [
+        "cloudfront:CreateInvalidation",
+        "cloudfront:GetInvalidation"
+      ],
+      "Resource": "arn:aws:cloudfront::ACCOUNT_ID:distribution/DISTRIBUTION_ID"
+    },
+    {
+      "_comment": "Optional: lets the deploy script confirm which identity it is using via sts get-caller-identity. sts:GetCallerIdentity takes no resource and cannot be restricted.",
+      "Effect": "Allow",
+      "Action": "sts:GetCallerIdentity",
+      "Resource": "*"
+    }
+  ]
+}

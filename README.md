@@ -1,96 +1,16 @@
-# Divyam Shree - Cold Coffee Instant Mix Landing Page
+# React + Vite
 
-A premium, mobile-first landing page for Divyam Shree Cold Coffee Instant Mix built with Angular and Tailwind CSS.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## Features
+Currently, two official plugins are available:
 
-- **Premium Design**: Dark background with gold accents following brand guidelines
-- **Mobile-First**: Responsive design optimized for all screen sizes
-- **Accessibility**: WCAG compliant with proper ARIA labels and semantic HTML
-- **Performance**: Optimized animations using CSS transforms and opacity
-- **Modern Stack**: Angular 19 with Tailwind CSS v3
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Brand Colors
+## React Compiler
 
-- Primary: `#4B2A17` (Dark Brown)
-- Secondary: `#8B4513` (Saddle Brown)  
-- Accent: `#FFD700` (Gold)
-- Background: `#2B1B0F` (Very Dark Brown)
-- Text: `#FFFFFF` (White)
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Development
+## Expanding the Oxlint configuration
 
-### Prerequisites
-
-- Node.js 18+ (use `nvm use 18`)
-- npm
-
-### Setup
-
-```bash
-# Install dependencies
-npm install
-
-# Start development server
-ng serve
-
-# Open http://localhost:4200
-```
-
-### Build
-
-```bash
-# Development build
-ng build --configuration development
-
-# Production build
-ng build --configuration production
-```
-
-### Testing
-
-```bash
-# Run unit tests
-ng test
-
-# Run linting
-ng lint
-```
-
-## Project Structure
-
-```
-src/
-  app/
-    components/
-      hero/           # Main hero section
-      logo/           # Coffee-themed logo component
-      instagram-button/ # Instagram CTA button
-  styles/
-    tailwind.css     # Tailwind CSS imports
-    variables.scss   # Brand color variables
-```
-
-## Components
-
-- **HeroComponent**: Main landing page with brand name, coming soon message, and Instagram CTA
-- **LogoComponent**: Animated coffee cup SVG with steam effects
-- **InstagramButtonComponent**: Accessible Instagram follow button
-
-## Performance Features
-
-- CSS-only animations (no JavaScript)
-- GPU-accelerated transforms
-- Optimized bundle size
-- Lighthouse-friendly structure
-- `prefers-reduced-motion` support
-
-## Browser Support
-
-- Modern browsers (Chrome, Firefox, Safari, Edge)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-- Responsive design from 320px to 1920px+
-
-## License
-
-Private project for Divyam Shree brand.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.

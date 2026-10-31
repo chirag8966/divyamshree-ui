@@ -1,0 +1,27 @@
+# Divyam Shree — https://divyamshree.com/
+# Allow all search engine crawlers and bots
+User-agent: *
+Allow: /
+
+# AI / answer-engine crawlers — explicitly welcomed for brand visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Canonical XML Sitemap
+Sitemap: https://divyamshree.com/sitemap.xml
+Host: https://divyamshree.com

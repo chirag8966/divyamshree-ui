@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://divyamshree.com/</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+
+    <!-- Language alternates -->
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://divyamshree.com/" />
+    <xhtml:link rel="alternate" hreflang="hi-in" href="https://divyamshree.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://divyamshree.com/" />
+
+    <!-- Primary Product Images for Google Image Search -->
+    <image:image>
+      <image:loc>https://divyamshree.com/images/tea.jpg</image:loc>
+      <image:title>Divyam Shree Premium Regular Tea, Hand-Picked Leaves, 1kg Pack, High Protein Content, Made in India</image:title>
+      <image:caption>Divyam Shree Premium Regular Tea, hand-picked leaves, packed in a 1kg pack</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://divyamshree.com/images/coffee.jpg</image:loc>
+      <image:title>Divyam Shree Cold Coffee Instant Mix</image:title>
+      <image:caption>Cold coffee instant mix with sugar, soluble coffee and vanilla</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://divyamshree.com/images/chaat_masala.jpg</image:loc>
+      <image:title>Divyam Shree Jeerawan Masala</image:title>
+      <image:caption>Jeerawan Masala with jeera, saunf, dhaniya, kala namak and amchur</image:caption>
+    </image:image>
+
+    <!-- Heritage Story Images -->
+    <image:image>
+      <image:loc>https://divyamshree.com/images/story/story_1_origin.jpg</image:loc>
+      <image:title>Divyam Shree Origin Tea Stall</image:title>
+      <image:caption>The family tea stall where Divyam Shree began</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://divyamshree.com/images/story/story_2_heritage_1980s.jpg</image:loc>
+      <image:title>1980s Heritage Tea Tradition</image:title>
+      <image:caption>Grandfather brewing cutting chai in a 1980s tea stall</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://divyamshree.com/images/story/story_3_diwali_rebirth.jpg</image:loc>
+      <image:title>Divyam Shree Diwali Morning</image:title>
+      <image:caption>5:50 AM on Diwali morning, when the family decided to revive the old recipes</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://divyamshree.com/images/story/story_4_promise.jpg</image:loc>
+      <image:title>Divyam Shree Kitchen Today</image:title>
+      <image:caption>The Divyam Shree kitchen today</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://divyamshree.com/logo.png</image:loc>
+      <image:title>Divyam Shree Insignia Logo</image:title>
+      <image:caption>Divyam Shree logo</image:caption>
+    </image:image>
+  </url>
+</urlset>

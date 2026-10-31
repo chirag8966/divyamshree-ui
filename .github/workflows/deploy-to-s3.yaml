@@ -31,18 +31,18 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build the project
-        run: npm run build -- --configuration production
+        run: npm run build
 
       - name: Sync files to S3 bucket
         run: |
-          aws s3 sync ./dist/divyamshree-ui/browser s3://${{ env.BUCKET_NAME }}/ --delete
+          aws s3 sync ./dist s3://${{ env.BUCKET_NAME }}/ --delete
 
       - name: cache invalidation
         run: |
